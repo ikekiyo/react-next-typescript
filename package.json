@@ -3,7 +3,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "lint": "eslint --ext .ts,.js,.tsx --ignore-path .gitignore .",
+    "fix-lint": "eslint --fix --ext .ts,.js,.tsx --ignore-path .gitignore ."
   },
   "dependencies": {
     "next": "^9.3.2",
@@ -13,6 +15,7 @@
   "devDependencies": {
     "@types/node": "^13.9.5",
     "@types/react": "^16.9.27",
+    "@types/react-dom": "^16.9.5",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
     "eslint": "^6.8.0",
